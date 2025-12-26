@@ -1,7 +1,7 @@
 
 import reflex as rx
 
-from BMW_Publicidad import BMW
+from Foto_sombras import BMW
 from Navbar_trasparente import Navbar_trasparente
 from Cabezera import Cabezera
 from Carrusel_foto_grande import Carrusel_grande
