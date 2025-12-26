@@ -1,0 +1,122 @@
+import reflex as rx
+
+
+def ProductoServicio() -> rx.Component:
+    return rx.box(
+        rx.vstack(
+            # TÍTULO DE SECCIÓN
+            rx.heading(
+                "Nuestra cocina",
+                size="8",
+                text_align="center",
+            ),
+
+            rx.text(
+                "Producto, técnica y respeto por el origen.",
+                size="5",
+                text_align="center",
+                color="gray.600",
+            ),
+
+            # BLOQUES DE PRODUCTO / SERVICIO
+            rx.hstack(
+                # BLOQUE 1
+                rx.vstack(
+                    rx.image(
+                        src="Ensalada_Barron.jpg",
+                        width="100%",
+                        height="260px",
+                        object_fit="cover",
+                        border_radius="10px",
+                    ),
+                    rx.heading(
+                        "Producto local",
+                        size="5",
+                    ),
+                    rx.text(
+                        "Trabajamos con productores cercanos y de temporada, "
+                        "respetando el ritmo natural de cada ingrediente.",
+                        size="4",
+                        color="gray.600",
+                    ),
+                    spacing="3",
+                    align_items="start",
+                    max_width="320px",
+                ),
+
+                # BLOQUE 2
+                rx.vstack(
+                    rx.image(
+                        src="Hamburguesa_Barron.jpg",
+                        width="100%",
+                        height="260px",
+                        object_fit="cover",
+                        border_radius="10px",
+                    ),
+                    rx.heading(
+                        "Cocina honesta",
+                        size="5",
+                    ),
+                    rx.text(
+                        "Una cocina reconocible, cuidada y sin artificios, "
+                        "donde el sabor es el verdadero protagonista.",
+                        size="4",
+                        color="gray.600",
+                    ),
+                    spacing="3",
+                    align_items="start",
+                    max_width="320px",
+                ),
+
+                # BLOQUE 3
+                rx.vstack(
+                    rx.image(
+                        src="Comedor_nuevo.jpg",
+                        width="100%",
+                        height="260px",
+                        object_fit="cover",
+                        border_radius="10px",
+                    ),
+                    rx.heading(
+                        "Experiencia",
+                        size="5",
+                    ),
+                    rx.text(
+                        "Un espacio pensado para disfrutar con calma, "
+                        "en un ambiente cercano y acogedor.",
+                        size="4",
+                        color="gray.600",
+                    ),
+                    spacing="3",
+                    align_items="start",
+                    max_width="320px",
+                ),
+
+                spacing="6",
+                justify="center",
+                width="100%",
+            ),
+
+            # CTA OPCIONAL
+            rx.button(
+                "Ver nuestra carta",
+                bg_color="#4a3a32",
+                color="#f5f3ef",
+                padding_x="2.5rem",
+                border_radius="md",
+                margin_top="3rem",
+                _hover={"bg_color": "#3b2f2a"},
+            ),
+
+            spacing="6",
+            max_width="1200px",
+            margin="0 auto",
+            padding="6rem 2rem",
+            align_items="center",
+        ),
+        width="100%",
+        background_color="#8b6225",
+    )
+
+app = rx.App()
+app.add_page(ProductoServicio)

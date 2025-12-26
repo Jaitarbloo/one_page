@@ -11,19 +11,19 @@ def Navbar_trasparente() -> rx.Component:
                                         
                                                 rx.hstack(
                                                             rx.link(
-                                                                    rx.text("Nuestra cocina", size="7", color="brown"),
+                                                                    rx.text("Nuestra cocina", size="7", color="White"),
                                                                 href="https://reflex.dev",
                                                                     ),
                                                             rx.link(
-                                                                    rx.text("Queda aquí", size="7", color="brown"),
+                                                                    rx.text("Queda aquí", size="7", color="White"),
                                                                 href="https://reflex.dev",
                                                                     ),
                                                             rx.link(
-                                                                    rx.text("Horarios y Eventos", size="7", color="brown"),
+                                                                    rx.text("Horarios y Eventos", size="7", color="White"),
                                                                 href="https://reflex.dev",
                                                                     ),
                                                             rx.link(
-                                                                    rx.text("Reserva tu mesa", size="7", color="brown"),
+                                                                    rx.text("Reserva tu mesa", size="7", color="White"),
                                                                 href="https://reflex.dev",
                                                                     ),
                             
@@ -35,7 +35,7 @@ def Navbar_trasparente() -> rx.Component:
                                                 rx.box(# La línea fina debajo de las palabras
                                                         height="1px",
                                                         width="100%",  # Ocupa el 100% del ancho de su contenedor padre (el rx.vstack con width="fit_content")
-                                                        bg="brown", # Color de fondo cambiado a blanco sólido para mayor visibilidad
+                                                        bg="White", # Color de fondo cambiado a blanco sólido para mayor visibilidad
                                                         margin_top="0.5em", # Pequeño margen para separar la línea del texto
                                                         
                                                         ),

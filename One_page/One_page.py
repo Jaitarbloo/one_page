@@ -7,9 +7,9 @@ from Cabezera import Cabezera
 from Carrusel_foto_grande import Carrusel_grande
 from Carrusel_foto_pequena import Carrusel_peque
 from Compromiso import Compromiso
-from Ubicacion import Ubicacion
-#from Componente_prueba1 import Ubicacion
-#from Componente_prueba import Compromiso
+from Footer1 import Ubicacion
+from Footer2 import UbicacionFooter
+from Producto_servivio import ProductoServicio
 
 
 
@@ -19,11 +19,13 @@ def index():
 
                         Navbar_trasparente(),
                         Cabezera(),
-                        BMW(),
-                        Compromiso(),
+                        ProductoServicio(),
                         Carrusel_grande(),
+                        #BMW(),
+                        Compromiso(),
                         Carrusel_peque(),
                         Ubicacion(),
+                        UbicacionFooter(),
                         
 
 
