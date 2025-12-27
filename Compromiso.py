@@ -6,7 +6,7 @@ def Compromiso() -> rx.Component:
         rx.hstack(
             # IMAGEN
             rx.image(
-                src="Cascada.jpg",  # tu imagen
+                src="Naturaleza.jpg",  # tu imagen
                 width="50%",
                 height="500px",
                 border_radius="10px",
@@ -20,13 +20,6 @@ def Compromiso() -> rx.Component:
                 ),
 
                 
-                rx.text(
-                    "Cuidamos de nuestro equipo, fomentando un entorno de trabajo "
-                    "justo, humano y colaborativo.",
-                    size="4",
-                    color="gray.600",
-                ),
-
                 rx.text(
                     "Trabajamos con producto local y de temporada, reducimos residuos, "
                     "reciclamos y tomamos decisiones responsables para minimizar "

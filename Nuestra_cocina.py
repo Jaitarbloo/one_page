@@ -71,7 +71,7 @@ def tres_fotos_pequenas() -> rx.Component:
                 # BLOQUE 3
                 rx.vstack(
                     rx.image(
-                        src="Comedor_nuevo.jpg",
+                        src="Desayuno_Barron.png",
                         width="100%",
                         height="260px",
                         object_fit="cover",
