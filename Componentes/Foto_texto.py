@@ -1,7 +1,7 @@
 import reflex as rx
 
 
-def Compromiso() -> rx.Component:
+def Foto_mediana_con_texto() -> rx.Component:
     return rx.box(
         rx.hstack(
             # IMAGEN
@@ -63,4 +63,4 @@ def Compromiso() -> rx.Component:
         background_color="#b9864b",
     )
 app = rx.App()
-app.add_page(Compromiso)
+app.add_page(Foto_mediana_con_texto)

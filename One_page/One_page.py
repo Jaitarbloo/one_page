@@ -1,17 +1,13 @@
 
 import reflex as rx
 
-from One_page.Componentes.Foto_sombras import BMW
-from One_page.Componentes.Navbar_trasparente import Navbar_trasparente
-from Cabezera import Cabezera
-from One_page.Componentes.Carrusel_foto_grande import Carrusel_grande
-from One_page.Componentes.Carrusel_foto_pequena import Carrusel_peque
-from Compromiso import Compromiso
-from One_page.Componentes.Footer1 import Ubicacion
-from One_page.Componentes.Footer2 import UbicacionFooter
-from Producto_servivio import ProductoServicio
-from Cabezera1 import CabezeraImpactante
-from Componente_prueba import CabezeraHero
+from Navbar_trasparente import Navbar_trasparente
+from Cabezera import Fondo_fijo
+from Nuestra_cocina import tres_fotos_pequenas 
+from Carrusel_foto_grande import Carrusel_grande
+from Compromiso import Compromiso 
+from Carrusel_foto_pequena import Carrusel_peque
+from Footer import UbicacionFooter
 
 
 
@@ -88,15 +84,11 @@ def index():
                                             #Aviso legal / derechos 
                         
                         Navbar_trasparente(),
-                        CabezeraHero(),
-                        #Cabezera(),
-                        #CabezeraImpactante(),
-                        ProductoServicio(),
+                        Fondo_fijo(),
+                        tres_fotos_pequenas(),
                         Carrusel_grande(),
-                        #BMW(),
                         Compromiso(),
                         Carrusel_peque(),
-                        #Ubicacion(),
                         UbicacionFooter(),
                         
 

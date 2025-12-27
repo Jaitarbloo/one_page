@@ -1,7 +1,7 @@
 import reflex as rx
 
 
-def tres_fotos_pequeñas_con_texto() -> rx.Component:
+def tres_fotos_pequenas() -> rx.Component:
     return rx.box(
         rx.vstack(
             # TÍTULO DE SECCIÓN
@@ -119,4 +119,4 @@ def tres_fotos_pequeñas_con_texto() -> rx.Component:
     )
 
 app = rx.App()
-app.add_page(tres_fotos_pequeñas_con_texto)
+app.add_page(tres_fotos_pequenas)

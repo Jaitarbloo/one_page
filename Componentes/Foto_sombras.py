@@ -1,6 +1,6 @@
 import reflex as rx
 
-def BMW() -> rx.Component:
+def Foto_sombra_izquierda() -> rx.Component:
     
     return rx.box( # Contenedor con imagen de fondo y overlay degradado
         
@@ -112,5 +112,5 @@ def BMW() -> rx.Component:
 
 
 app = rx.App()
-app.add_page(BMW)
+app.add_page(Foto_sombra_izquierda)
 

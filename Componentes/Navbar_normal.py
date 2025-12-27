@@ -1,7 +1,7 @@
 import reflex as rx
 from rxconfig import config
 
-def Navbar() -> rx.Component:
+def Navbar_normal() -> rx.Component:
 
     return rx.vstack(
         
@@ -73,4 +73,4 @@ def Navbar() -> rx.Component:
                 )
 
 app = rx.App()
-app.add_page(Navbar)
+app.add_page(Navbar_normal)

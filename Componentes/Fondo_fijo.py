@@ -1,7 +1,7 @@
 import reflex as rx
 
 
-def CabezeraHero() -> rx.Component:
+def Fondo_fijo() -> rx.Component:
     return rx.box(
         rx.hstack(
             # BLOQUE TEXTO
@@ -106,4 +106,4 @@ def CabezeraHero() -> rx.Component:
 
 
 app = rx.App()
-app.add_page(CabezeraHero)
+app.add_page(Fondo_fijo)
