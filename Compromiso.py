@@ -6,7 +6,7 @@ def Compromiso() -> rx.Component:
         rx.hstack(
             # IMAGEN
             rx.image(
-                src="Terraza_Barron.jpg",  # tu imagen
+                src="Cascada.jpg",  # tu imagen
                 width="50%",
                 height="500px",
                 border_radius="10px",
@@ -15,16 +15,11 @@ def Compromiso() -> rx.Component:
             # TEXTO
             rx.vstack(
                 rx.heading(
-                    "Personas y planeta",
+                    "Respeto por nuetro planeta",
                     size="8",
                 ),
 
-                rx.text(
-                    "Creemos que la buena cocina empieza por el respeto.",
-                    size="5",
-                    font_weight="bold",
-                ),
-
+                
                 rx.text(
                     "Cuidamos de nuestro equipo, fomentando un entorno de trabajo "
                     "justo, humano y colaborativo.",
