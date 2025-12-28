@@ -1,7 +1,7 @@
 import reflex as rx
 
 
-def cuatro_fotos_pequenas_dos_botones() -> rx.Component:
+def cuatro_fotos_pequenas() -> rx.Component:
     return rx.box(
         rx.vstack(
             # TÍTULO DE SECCIÓN
@@ -83,7 +83,7 @@ def cuatro_fotos_pequenas_dos_botones() -> rx.Component:
                     max_width="260px",
                 ),
 
-                # BLOQUE 4
+                # BLOQUE 4 (NUEVO)
                 rx.vstack(
                     rx.image(
                         src="Terraza_Barron.jpg",
@@ -107,29 +107,18 @@ def cuatro_fotos_pequenas_dos_botones() -> rx.Component:
                 spacing="5",
                 justify="center",
                 width="100%",
-                wrap="wrap",
+                wrap="wrap",  # IMPORTANTE para pantallas medianas
             ),
 
-            # CTA DOBLE
-            rx.hstack(
-                rx.button(
-                    "Ver nuestra carta",
-                    bg_color="#4a3a32",
-                    color="#f5f3ef",
-                    padding_x="3rem",
-                    border_radius="md",
-                    _hover={"bg_color": "#3b2f2a"},
-                ),
-                rx.button(
-                    "Reservar mesa",
-                    bg_color="#4a3a32",
-                    color="#f5f3ef",
-                    padding_x="3rem",
-                    border_radius="md",
-                    _hover={"bg_color": "#3b2f2a"},
-                ),
-                spacing="8",
-                margin_top="3.5rem",
+            # CTA OPCIONAL
+            rx.button(
+                "Ver nuestra carta",
+                bg_color="#4a3a32",
+                color="#f5f3ef",
+                padding_x="2.5rem",
+                border_radius="md",
+                margin_top="3rem",
+                _hover={"bg_color": "#3b2f2a"},
             ),
 
             spacing="6",
@@ -144,4 +133,4 @@ def cuatro_fotos_pequenas_dos_botones() -> rx.Component:
 
 
 app = rx.App()
-app.add_page(cuatro_fotos_pequenas_dos_botones)
+app.add_page(cuatro_fotos_pequenas)
