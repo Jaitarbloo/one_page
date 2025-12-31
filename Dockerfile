@@ -1,24 +1,15 @@
-FROM python:3.11-slim
-
-ENV PYTHONUNBUFFERED=1
-ENV PYTHONDONTWRITEBYTECODE=1
+FROM python:3.11
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y \ curl \ unzip \ && rm -rf /var/lib/apt/lists/*
+COPY . .
 
-RUN pip install --upgrade pip setuptools wheel
+ENV VIRTUAL_ENV=/app/.venv_docker
+ENV PATH="$VIRTUAL_ENV/bin:$PATH"
+RUN python3.11 -m venv $VIRTUAL_ENV
 
-COPY requirements.txt .
+RUN pip install --upgrade pip 
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-
-
-COPY . .
-
-RUN reflex init
-
-EXPOSE 8080
-
-CMD ["reflex", "run", "--env", "prod", "--backend-only", "]
+CMD reflex run --env prod --backend-only
