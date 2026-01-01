@@ -19,12 +19,12 @@ def index():
     return rx.vstack(   
                         
                         Navbar_trasparente(),
-                        #Cabezera(),
+                        Cabezera(),
                         cuatro_fotos_pequenas_dos_botones(),
-                        #Carrusel_grande(),
-                        #El_Local(),
+                        Carrusel_grande(),
+                        El_Local(),
                         Carrusel_peque(),
-                        #EquipoHumano(),
+                        EquipoHumano(),
                         Compromiso_naturaleza_icono(),
                         UbicacionFooter(),
                         
