@@ -2,7 +2,7 @@ import reflex as rx
 
 config = rx.Config(
     app_name="One_page",
-    api_url="https://one-zrwg.onrender.com:8000",
+    api_url="https://one-zrwg.onrender.com",
     cors_allowed_origins=[
         "http://localhost:3000",
         "http://https://one-page-exqm.vercel.app/",
