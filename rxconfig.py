@@ -5,7 +5,7 @@ config = rx.Config(
     api_url="https://one-zrwg.onrender.com",
     cors_allowed_origins=[
         "http://localhost:3000",
-        "http://https://one-page-exqm.vercel.app",
+        "https://one-page-exqm.vercel.app",
         "https://www.jaitarbloo.es"
         ],
     
