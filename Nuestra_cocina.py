@@ -128,7 +128,7 @@ def cuatro_fotos_pequenas_dos_botones() -> rx.Component:
                     border_radius="md",
                     _hover={"bg_color": "#3b2f2a"},
                 ),
-                spacing="6",
+                spacing="3",
                 margin_top="3.5rem",
             ),
 
