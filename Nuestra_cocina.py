@@ -111,9 +111,9 @@ def cuatro_fotos_pequenas_dos_botones() -> rx.Component:
             ),
 
             # CTA DOBLE
-            rx.hstack(
+            rx.flex(
                 rx.button(
-                    "Ver nuestra carta",
+                    "Nuestra carta",
                     bg_color="#4a3a32",
                     color="#f5f3ef",
                     padding_x="3rem",
@@ -128,7 +128,7 @@ def cuatro_fotos_pequenas_dos_botones() -> rx.Component:
                     border_radius="md",
                     _hover={"bg_color": "#3b2f2a"},
                 ),
-                spacing="8",
+                spacing="6",
                 margin_top="3.5rem",
             ),
 
