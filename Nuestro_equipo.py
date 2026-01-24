@@ -2,7 +2,7 @@ import reflex as rx
 
 
 def EquipoHumano() -> rx.Component:
-    return rx.box(
+    return rx.flex(
         rx.hstack(
             # IMAGEN
             rx.box(
