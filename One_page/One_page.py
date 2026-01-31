@@ -37,4 +37,4 @@ def index():
 
 
 app = rx.App()
-app.add_page(index)
+app.add_page(index, title="Onepage....mi ricón de trabajo")
