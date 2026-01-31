@@ -1,9 +1,8 @@
 import reflex as rx
 
-
 def Compromiso_naturaleza_icono() -> rx.Component:
     return rx.box(
-        rx.hstack(
+        rx.flex(
             # CONTENEDOR DE IMÁGENES (CAMBIO AUTOMÁTICO)
             rx.box(
                 rx.image(
@@ -36,8 +35,9 @@ def Compromiso_naturaleza_icono() -> rx.Component:
                     object_fit="cover",
                     animation="fade3 15s infinite",
                 ),
-                width="50%",
-                height="500px",
+                # Responsive: 100% ancho en móvil, 50% en escritorio
+                width=["100%", "100%", "50%"],
+                height=["300px", "400px", "500px"],
                 position="relative",
                 overflow="hidden",
                 border_radius="10px",
@@ -67,50 +67,51 @@ def Compromiso_naturaleza_icono() -> rx.Component:
 
             # TEXTO
             rx.vstack(
-                # ICONO RECICLAJE
                 rx.image(
                     src="Icono_reciclaje.webp",
                     width="100px",
                     height="100px",
                     margin_bottom="1rem",
                 ),
-
                 rx.heading(
                     "Respeto por nuestro planeta",
                     size="8",
+                    text_align="center", # Centrado para móvil
                 ),
-
                 rx.text(
                     "Trabajamos con producto local y de temporada, reducimos residuos, "
                     "reciclamos y tomamos decisiones responsables para minimizar "
                     "nuestro impacto ambiental.",
                     size="4",
                     color="gray.600",
+                    text_align="center",
                 ),
-
                 rx.text(
                     "Porque creemos que cuidar del planeta también forma parte "
                     "de lo que servimos en la mesa.",
                     size="4",
                     font_style="italic",
+                    text_align="center",
                 ),
-
                 spacing="4",
-                align_items="center",  # IMPORTANTE: centra icono + texto
+                align_items="center",
+                width=["100%", "100%", "50%"],
                 max_width="500px",
             ),
 
+            # RESPONSIVE CORE:
+            # column = móvil (imagen arriba), row = escritorio (lado a lado)
+            flex_direction=["column", "column", "row"],
             spacing="8",
             align_items="center",
             justify="center",
             max_width="1200px",
             margin="0 auto",
-            padding="6rem 2rem",
+            padding=["2rem 1rem", "4rem 2rem", "6rem 2rem"],
         ),
         width="100%",
         background_color="#b9864b",
     )
-
 
 app = rx.App()
 app.add_page(Compromiso_naturaleza_icono)

@@ -10,7 +10,7 @@ from Carrusel_foto_pequena import Carrusel_peque
 from Nuestro_equipo import EquipoHumano
 from Compromiso_ambiental import Compromiso_naturaleza_icono
 from Footer import UbicacionFooter
-#from Componente_en_proceso import ....
+#from Componente_en_proceso import ......
 
 
 
