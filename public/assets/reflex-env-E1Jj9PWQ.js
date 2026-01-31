@@ -1,1 +1,0 @@
-var e={PING:`https://one-zrwg.onrender.com/ping`,EVENT:`wss://one-zrwg.onrender.com/_event`,UPLOAD:`https://one-zrwg.onrender.com/_upload`,AUTH_CODESPACE:`https://one-zrwg.onrender.com/auth-codespace`,HEALTH:`https://one-zrwg.onrender.com/_health`,ALL_ROUTES:`https://one-zrwg.onrender.com/_all_routes`,TRANSPORT:`websocket`,TEST_MODE:!1};export{e as t};
