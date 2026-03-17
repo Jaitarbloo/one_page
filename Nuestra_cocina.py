@@ -1,147 +1,71 @@
 import reflex as rx
 
-
-def cuatro_fotos_pequenas_dos_botones() -> rx.Component:
+def cuatro_fotos_con_boton() -> rx.Component:
     return rx.box(
         rx.vstack(
-            # TÍTULO DE SECCIÓN
+            # TÍTULO (Tamaño intermedio 8)
             rx.heading(
-                "Nuestra cocina",
-                size="8",
+                "Elige y disfruta",
+                size="8", 
                 text_align="center",
+                color="#4a3a32",
+                margin_bottom="2rem",
             ),
 
-            rx.text(
-                "Producto, técnica y respeto por el origen.",
-                size="5",
-                text_align="center",
-                color="gray.600",
-            ),
-
-            # BLOQUES DE PRODUCTO / SERVICIO
+            # BLOQUE DE FOTOS (Medidas equilibradas)
             rx.hstack(
-                # BLOQUE 1
-                rx.vstack(
+                *[
                     rx.image(
-                        src="Ensalada_Barron.jpg",
-                        width="100%",
-                        height="260px",
+                        src=img,
+                        width="260px",    # Ni muy pequeño (220) ni muy grande (320)
+                        height="450px",   # Proporción estilizada
                         object_fit="cover",
                         border_radius="10px",
-                    ),
-                    rx.heading("Producto local", size="5"),
-                    rx.text(
-                        "Trabajamos con productores cercanos y de temporada, "
-                        "respetando el ritmo natural de cada ingrediente.",
-                        size="4",
-                        color="gray.600",
-                    ),
-                    spacing="3",
-                    align_items="start",
-                    max_width="260px",
-                ),
-
-                # BLOQUE 2
-                rx.vstack(
-                    rx.image(
-                        src="Hamburguesa_Barron.jpg",
-                        width="100%",
-                        height="260px",
-                        object_fit="cover",
-                        border_radius="10px",
-                    ),
-                    rx.heading("Cocina honesta", size="5"),
-                    rx.text(
-                        "Una cocina reconocible, cuidada y sin artificios, "
-                        "donde el sabor es el verdadero protagonista.",
-                        size="4",
-                        color="gray.600",
-                    ),
-                    spacing="3",
-                    align_items="start",
-                    max_width="260px",
-                ),
-
-                # BLOQUE 3
-                rx.vstack(
-                    rx.image(
-                        src="Desayuno_Barron.png",
-                        width="100%",
-                        height="260px",
-                        object_fit="cover",
-                        border_radius="10px",
-                    ),
-                    rx.heading("Experiencia", size="5"),
-                    rx.text(
-                        "Un espacio pensado para disfrutar con calma, "
-                        "en un ambiente cercano y acogedor.",
-                        size="4",
-                        color="gray.600",
-                    ),
-                    spacing="3",
-                    align_items="start",
-                    max_width="260px",
-                ),
-
-                # BLOQUE 4
-                rx.vstack(
-                    rx.image(
-                        src="Terraza_Barron.jpg",
-                        width="100%",
-                        height="260px",
-                        object_fit="cover",
-                        border_radius="10px",
-                    ),
-                    rx.heading("Ambiente", size="5"),
-                    rx.text(
-                        "Un lugar donde compartir, relajarse y sentirse "
-                        "como en casa, dentro y fuera.",
-                        size="4",
-                        color="gray.600",
-                    ),
-                    spacing="3",
-                    align_items="start",
-                    max_width="260px",
-                ),
-
-                spacing="5",
+                        box_shadow="0px 10px 25px rgba(0,0,0,0.25)",
+                        transition="all 0.3s ease",
+                        _hover={"transform": "scale(1.04)"},
+                    )
+                    for img in [
+                        "Ensaladas_barron.webp",
+                        "Picoteo_barron.webp",
+                        "Bocadillos_barron.webp",
+                        "Menus_barron.webp"
+                    ]
+                ],
+                spacing="7", # Separación intermedia
                 justify="center",
                 width="100%",
                 wrap="wrap",
             ),
 
-            # CTA DOBLE
-            rx.flex(
-                rx.button(
-                    "Nuestra carta",
-                    bg_color="#4a3a32",
-                    color="#f5f3ef",
-                    padding_x="3rem",
-                    border_radius="md",
-                    _hover={"bg_color": "#3b2f2a"},
-                ),
+            # BOTÓN DE RESERVA (Tamaño medio-alto)
+            rx.link(
                 rx.button(
                     "Reservar mesa",
-                    bg_color="#4a3a32",
-                    color="#f5f3ef",
-                    padding_x="3rem",
-                    border_radius="md",
-                    _hover={"bg_color": "#3b2f2a"},
+                    size="4", 
+                    padding="2.2rem 4.5rem", # Relleno cómodo
+                    font_size="1.25rem",
+                    bg="#3d2b1f", 
+                    color="white",
+                    border_radius="full",
+                    margin_top="4rem", 
+                    cursor="pointer",
+                    _hover={"bg": "#2a1d15", "transform": "translateY(-4px)"},
+                    transition="all 0.3s ease",
                 ),
-                spacing="3",
-                margin_top="3.5rem",
+                href="tel:900100100",
+                text_decoration="none",
             ),
 
-            spacing="6",
-            max_width="1200px",
+            spacing="4",
+            max_width="1250px", # Ancho de contenedor intermedio
             margin="0 auto",
-            padding="6rem 2rem",
+            padding="5.5rem 2rem", # Padding vertical moderado
             align_items="center",
         ),
         width="100%",
         background_color="#d38832",
     )
 
-
 app = rx.App()
-app.add_page(cuatro_fotos_pequenas_dos_botones)
+app.add_page(cuatro_fotos_con_boton, route="/")

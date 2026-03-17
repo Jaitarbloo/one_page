@@ -10,23 +10,23 @@ def Cabezera() -> rx.Component:
             # TEXTO IZQUIERDA
             rx.vstack(
                 rx.heading(
-                    "BAR BARRÓN",
+                    "Taberna BARRÓN",
                     size="9",
-                    color="#f5f3ef",
+                    color="#dd9912",
                 ),
 
                 rx.text(
                     "Tu punto de encuentro",
                     size="6",
-                    color="#f5f3ef",
+                    color="#dd9912",
                     margin_top="1rem",
                 ),
 
                 rx.button(
-                    "Ver nuestra carta",
-                    bg_color="#4a3a32",
-                    color="#f5f3ef",
-                    padding_x="2.5rem",
+                    "RESERVAR MESA",
+                    bg="#3d2b1f",
+                    color="#e7e5ce",
+                    padding_x="1.5rem",
                     padding_y="1.2rem",
                     border_radius="md",
                     margin_top="2rem",

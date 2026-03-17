@@ -11,7 +11,7 @@ def EquipoHumano() -> rx.Component:
                 # 100% en móvil, 50% en escritorio
                 width=["100%", "100%", "50%"], 
                 min_height=["300px", "400px", "500px"],
-                border_radius="xl",
+                border_radius="10px"
             ),
 
             # TEXTO
@@ -22,7 +22,7 @@ def EquipoHumano() -> rx.Component:
                     color="#4a3a32",
                 ),
                 rx.text(
-                    "En Bar Barrón creemos que un buen servicio empieza mucho antes de servir una mesa.",
+                    "En nuestra taberna creemos que un buen servicio empieza mucho antes de servir una mesa.",
                     size="4",
                     color="gray.700",
                 ),
@@ -36,14 +36,8 @@ def EquipoHumano() -> rx.Component:
                     size="4",
                     color="gray.700",
                 ),
-                # Lista de checks adaptable
-                rx.flex(
-                    rx.text("✔ Actitud y cercanía", size="3", color="#4a3a32"),
-                    rx.text("✔ Formación continua", size="3", color="#4a3a32"),
-                    rx.text("✔ Respeto y compromiso", size="3", color="#4a3a32"),
-                    spacing="4",
-                    flex_direction=["column", "row", "row"], # Columna en móvil
-                ),
+                
+               
                 spacing="4",
                 align_items="start",
                 width=["100%", "100%", "50%"], # 100% en móvil
@@ -60,7 +54,7 @@ def EquipoHumano() -> rx.Component:
             padding=["2rem 1rem", "4rem 2rem", "6rem 2rem"], # Menos padding en móvil
         ),
         width="100%",
-        background_color="#0e0c0a"
+        background_color="#d38832"
     )
 
 app = rx.App()
