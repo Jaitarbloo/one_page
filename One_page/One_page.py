@@ -1,7 +1,7 @@
 
 import reflex as rx
 
-from Navbar_trasparente import Navbar_trasparente
+from Navbar_trasparente import Navbar_trasparente_desplegable
 from Cabezera import Cabezera
 from Nuestra_cocina import cuatro_fotos_con_boton 
 from Carrusel_foto_grande import Carrusel_grande
@@ -10,14 +10,14 @@ from Carrusel_foto_pequena import Carrusel_peque
 from Nuestro_equipo import EquipoHumano
 from Compromiso_ambiental import Compromiso_naturaleza_icono
 from Footer import UbicacionFooter
-from Componente_en_proceso import UbicacionFooter1
+#from Componente_en_proceso import ....
 
 
 def index():
     
     return rx.vstack(   
                         
-                        Navbar_trasparente(),
+                        Navbar_trasparente_desplegable(),
                         Cabezera(),
                         Carrusel_peque(),
                         cuatro_fotos_con_boton(),
@@ -25,7 +25,6 @@ def index():
                         El_Local(),
                         EquipoHumano(),
                         Compromiso_naturaleza_icono(),
-                        #UbicacionFooter1(),
                         UbicacionFooter(),
 
                         spacing="0"
