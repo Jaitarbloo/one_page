@@ -52,14 +52,14 @@ def Compromiso_naturaleza_icono() -> rx.Component:
                     animation="fade1 15s infinite",
                 ),
                 rx.image(
-                    src="Cascada.jpg",
+                    src="Pintxos_barron.webp",
                     position="absolute",
                     top="0", left="0", width="100%", height="100%",
                     object_fit="cover",
                     animation="fade2 15s infinite",
                 ),
                 rx.image(
-                    src="unnamed.jpg",
+                    src="Cascada.jpg",
                     position="absolute",
                     top="0", left="0", width="100%", height="100%",
                     object_fit="cover",

@@ -2,10 +2,12 @@ import reflex as rx
 
 def Carrusel_peque() -> rx.Component:
     slides = [
-        "Desayuno_Barron.png",
-        "Ensalada_Barron.jpg",
-        "Hamburguesa_Barron.jpg",
-        "unnamed.jpg",
+        "Bocata_barron.webp",
+        "Ensalada_calamares_barron.webp ",
+        "Hamburguesa_queso_barron.webp ",
+        "Nachos_barron.webp ",
+        "Revuelto_tomate_barron.webp",
+        "Verduras_barron.webp"
     ]
 
     return rx.box(
@@ -15,8 +17,8 @@ def Carrusel_peque() -> rx.Component:
                     rx.image(
                         src=image,
                         # Tamaño INTERMEDIO (Móvil, Tablet, Escritorio)
-                        width=["200px", "275px", "350px"], 
-                        height=["150px", "200px", "250px"],
+                        width=["210px", "210px", "210px"], 
+                        height=["230px", "230px", "230px"],
                         object_fit="cover",
                         border_radius="10px",
                         transition="transform 0.4s ease",

@@ -24,7 +24,7 @@ def El_Local() -> rx.Component:
             rx.hstack(
                 # FOTO GRANDE
                 rx.box(
-                    background_image="url('/Comedor_nuevo.jpg')",
+                    background_image="url('/Salita_barron.webp ')",
                     background_size="cover",
                     background_position="center",
                     width="60%",
@@ -35,7 +35,7 @@ def El_Local() -> rx.Component:
                 # FOTOS PEQUEÑAS
                 rx.vstack(
                     rx.box(
-                        background_image="url('/Terraza_Barron.jpg')",
+                        background_image="url('/Pasillo_barron.webp')",
                         background_size="cover",
                         background_position="center",
                         width="100%",

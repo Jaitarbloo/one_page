@@ -18,25 +18,46 @@ def Cabezera() -> rx.Component:
                 rx.text(
                     "Tu punto de encuentro",
                     size="6",
-                    color="#dd9912",
+                    color="#dd9912", 
                     margin_top="1rem",
                 ),
 
+                #rx.button(
+                #    "RESERVAR MESA",
+                 #   bg="#3d2b1f",
+                 #   color="#e7e5ce",
+                 #   padding_x="1.5rem",
+                  #  padding_y="1.2rem",
+                  #  border_radius="md",
+                 #   margin_top="2rem",
+                 #   _hover={"bg_color": "#3b2f2a"},
+                #),
+
+             rx.link(
                 rx.button(
-                    "RESERVAR MESA",
-                    bg="#3d2b1f",
-                    color="#e7e5ce",
-                    padding_x="1.5rem",
-                    padding_y="1.2rem",
-                    border_radius="md",
-                    margin_top="2rem",
-                    _hover={"bg_color": "#3b2f2a"},
+                    "Reservar mesa",
+                    size="3", 
+                    padding="1.8rem 3.5rem", # Relleno cómodo
+                    font_size="1.25rem",
+                    bg="#3d2b1f", 
+                    color="white",
+                    border_radius="full",
+                    margin_top="4rem", 
+                    cursor="pointer",
+                    _hover={"bg": "#2a1d15", "transform": "translateY(-4px)"},
+                    transition="all 0.3s ease",
                 ),
+                href="tel: 945 13 13 41 ",
+                text_decoration="none",
+            ),
 
                 align_items="start",
                 spacing="4",
                 max_width="500px",
             ),
+
+
+           
 
             # ICONO INSTAGRAM DERECHA
             rx.link(

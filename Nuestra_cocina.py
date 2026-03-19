@@ -42,8 +42,8 @@ def cuatro_fotos_con_boton() -> rx.Component:
             rx.link(
                 rx.button(
                     "Reservar mesa",
-                    size="4", 
-                    padding="2.2rem 4.5rem", # Relleno cómodo
+                    size="3", 
+                    padding="1.8rem 3.5rem", # Relleno cómodo
                     font_size="1.25rem",
                     bg="#3d2b1f", 
                     color="white",
@@ -53,7 +53,7 @@ def cuatro_fotos_con_boton() -> rx.Component:
                     _hover={"bg": "#2a1d15", "transform": "translateY(-4px)"},
                     transition="all 0.3s ease",
                 ),
-                href="tel:900100100",
+                href="tel: 945 13 13 41 ",
                 text_decoration="none",
             ),
 
