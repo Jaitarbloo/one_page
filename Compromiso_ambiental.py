@@ -99,7 +99,13 @@ def Compromiso_naturaleza_icono() -> rx.Component:
         ),
         width="100%",
         background_color="#b9864b",
+
     )
 
 app = rx.App()
 app.add_page(Compromiso_naturaleza_icono)
+
+
+
+              
+

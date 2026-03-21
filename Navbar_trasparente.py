@@ -1,74 +1,84 @@
 import reflex as rx
 
 def Navbar_trasparente_desplegable() -> rx.Component:
-    # Definimos los enlaces para evitar repetir código
     menu_items = [
         ("Nuestra cocina", "#Nuestra_cocina"),
         ("Elige y disfruta", "#Elige_y_Disfruta"),
         ("Nuestro espacio", "#Nuestro_espacio"),
         ("Equipo humano", "#Equipo_humano"),
         ("Sostenibilidad", "#Sostenibilidad"),
-        ("Reserva", "#Reserva"),
+        ("Reservar", "#Reservar"),
     ]
 
-    return rx.vstack(
-        rx.center(
-            # --- VERSIÓN ESCRITORIO ---
-            rx.vstack(
+    return rx.center( # Centra todo el bloque en la pantalla
+        rx.vstack(
+            # --- FILA DE CONTENIDO ---
+            rx.hstack(
+                # FOTO
+                rx.image(
+                    src="/Copa_barron.jpg",
+                    height=rx.breakpoints(initial="35px", lg="45px"),
+                    width="auto",
+                ),
+
+                # MENÚ ESCRITORIO
                 rx.hstack(
                     *[
                         rx.link(
-                            rx.text(text, size="5", color="White", _hover={"opacity": 0.7}),
+                            rx.text(text, size="5", color="white", _hover={"opacity": 0.7}),
                             href=url
                         ) for text, url in menu_items
                     ],
                     spacing="8",
-                    align="center",
-                    display=["none", "none", "none", "flex"], # Solo visible en pantallas grandes
+                    display=rx.breakpoints(initial="none", lg="flex"),
+                    margin_left="3em", 
                 ),
+
+                # MENÚ MÓVIL
                 rx.box(
-                    height="1px",
-                    width="100%",
-                    bg="White",
-                    margin_top="0.5em",
-                    display=["none", "none", "none", "block"], # La línea también se oculta
+                    rx.menu.root(
+                        rx.menu.trigger(
+                            rx.button(
+                                rx.icon("menu", color="white", size=30),
+                                variant="ghost",
+                                cursor="pointer",
+                            )
+                        ),
+                        rx.menu.content(
+                            *[
+                                rx.menu.item(text, on_click=rx.redirect(url)) 
+                                for text, url in menu_items
+                            ],
+                            background_color="rgba(0, 0, 51, 0.9)",
+                        ),
+                    ),
+                    display=rx.breakpoints(initial="block", lg="none"),
                 ),
-                width="fit_content",
+                
+                # Separación extrema en móvil, juntos en PC
+                justify=rx.breakpoints(initial="between", lg="center"),
                 align="center",
+                width="100%",
             ),
 
-            # --- VERSIÓN MÓVIL (Menú Desplegable) ---
+            # --- LÍNEA BLANCA (Ajustada al contenido) ---
             rx.box(
-                rx.menu.root(
-                    rx.menu.trigger(
-                        rx.button(
-                            rx.icon("menu", color="white", size=30),
-                            variant="ghost", # Mantiene la transparencia
-                            cursor="pointer",
-                        )
-                    ),
-                    rx.menu.content(
-                        *[
-                            rx.menu.item(
-                                text, 
-                                on_click=rx.redirect(url),
-                                color_scheme="gray"
-                            ) for text, url in menu_items
-                        ],
-                        background_color="rgba(0, 0, 51, 0.9)", # Fondo oscuro semi-transparente para leer el menú
-                    ),
-                ),
-                display=["block", "block", "block", "none"], # Visible en móvil y tablet
-                padding="1em",
+                height="1px",
+                bg="white",
+                width="100%",
+                margin_top="0.5em",
             ),
-            width="100%",
+            
+            spacing="0",
+            # En móvil forzamos un ancho casi total para que se vean los extremos.
+            # En PC dejamos que mida lo que midan los textos (fit-content).
+            width=rx.breakpoints(initial="90vw", lg="fit-content"),
+            align="center",
         ),
         background="transparent",
         position="fixed",
         top="0",
         z_index="999",
         width="100%",
-        padding_top="1em",
+        padding_top="1.5em",
     )
-
-

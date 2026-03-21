@@ -22,16 +22,7 @@ def Cabezera() -> rx.Component:
                     margin_top="1rem",
                 ),
 
-                #rx.button(
-                #    "RESERVAR MESA",
-                 #   bg="#3d2b1f",
-                 #   color="#e7e5ce",
-                 #   padding_x="1.5rem",
-                  #  padding_y="1.2rem",
-                  #  border_radius="md",
-                 #   margin_top="2rem",
-                 #   _hover={"bg_color": "#3b2f2a"},
-                #),
+              
 
              rx.link(
                 rx.button(

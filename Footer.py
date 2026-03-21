@@ -75,9 +75,11 @@ def UbicacionFooter() -> rx.Component:
             margin="0 auto",
             padding=["3rem 1rem", "5rem 2rem"],
             align_items="center", # Asegura que todo el vstack esté centrado
+            
         ),
         width="100%",
         background_color="#4a3a32",
+        
     )
 
 app = rx.App()
