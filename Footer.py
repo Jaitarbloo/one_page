@@ -2,7 +2,7 @@ import reflex as rx
 
 def UbicacionFooter() -> rx.Component:
     # URL directa para el botón "Cómo llegar"
-    maps_url = "https://www.google.com/maps/place/Barron+Taberna/@42.8474708,-2.6727284,17z/data=!3m1!4b1!4m6!3m5!1s0xd4fc268cc9bd6c7:0x1545ec37deb25185!8m2!3d42.8474669!4d-2.6701535!16s%2Fg%2F11bxdx516z?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D"
+    maps_url = "https://www.google.com/maps/place/Madrid/@40.4380986,-3.8443497,11z/data=!3m1!4b1!4m6!3m5!1s0xd422997800a3c81:0xc436dec1618c2269!8m2!3d40.4167279!4d-3.7032905!16zL20vMDU2X3k?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D"
     
     return rx.box(
         rx.vstack(
@@ -15,21 +15,17 @@ def UbicacionFooter() -> rx.Component:
                     margin_bottom="1rem",
                 ),
                 rx.text(
-                    "Taberna Barrón",
+                    "Bar Restaurante",
                     size="6",
                     font_weight="bold",
                     color="#f5f3ef",
                 ),
                 rx.text(
-                    "Pintore Kalea, 2, 01001 Vitoria-Gasteiz, Araba",
+                    "Vendita Polinesia,2",
                     size="4",
                     color="#d8d2c8",
                 ),
-                rx.text(
-                    "Tel. 945 13 13 41",
-                    size="4",
-                    color="#d8d2c8",
-                ),
+                
                 rx.text(
                     "Horario: Lunes a Domingo · 11:00 – 00:00",
                     size="4",
@@ -58,11 +54,11 @@ def UbicacionFooter() -> rx.Component:
 
             # PIE DE PÁGINA
             rx.flex(
-                rx.text("© 2025 Taberna Barrón - Vitoria-Gasteiz", size="3", color="#d8d2c8"),
+                rx.text("© 2025 Bar Restaurante ", size="3", color="#d8d2c8"),
                 rx.hstack(
-                    rx.link("Aviso legal", href="#", color="#d8d2c8", size="3"),
-                    rx.link("Privacidad", href="#", color="#d8d2c8", size="3"),
-                    spacing="4",
+                    rx.link("jaitarbloo@yahoo.es", href="#", color="#d8d2c8", size="3"),
+                    #rx.link("Privacidad", href="#", color="#d8d2c8", size="3"),
+                    spacing="5",
                 ),
                 justify="between",
                 width="100%",

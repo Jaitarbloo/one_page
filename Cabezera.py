@@ -10,15 +10,15 @@ def Cabezera() -> rx.Component:
             # TEXTO IZQUIERDA
             rx.vstack(
                 rx.heading(
-                    "Taberna BARRÓN",
+                    "Bar Restaurante",
                     size="9",
-                    color="#dd9912",
+                    #color="#dd9912",
                 ),
 
                 rx.text(
                     "Tu punto de encuentro",
                     size="6",
-                    color="#dd9912", 
+                    #color="#dd9912", 
                     margin_top="1rem",
                 ),
 
@@ -38,7 +38,7 @@ def Cabezera() -> rx.Component:
                     _hover={"bg": "#2a1d15", "transform": "translateY(-4px)"},
                     transition="all 0.3s ease",
                 ),
-                href="tel: 945 13 13 41 ",
+                href="https://www.jaitarbloo.com",
                 text_decoration="none",
             ),
 
@@ -61,7 +61,7 @@ def Cabezera() -> rx.Component:
                         "transition": "transform 0.2s",
                     },
                 ),
-                href="https://www.instagram.com/bar_barron/",
+                href="https://www.jaitarbloo.com",
                 is_external=True,
             ),
 

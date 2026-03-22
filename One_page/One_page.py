@@ -62,4 +62,4 @@ def index():
 
 
 app = rx.App(html_lang="es")
-app.add_page(index, title="Propuesta Barrón")
+app.add_page(index, title="Ejemplo Onepage")

@@ -53,7 +53,7 @@ def cuatro_fotos_con_boton() -> rx.Component:
                     _hover={"bg": "#2a1d15", "transform": "translateY(-4px)"},
                     transition="all 0.3s ease",
                 ),
-                href="tel: 945 13 13 41 ",
+                href="https://www.jaitarbloo.com",
                 text_decoration="none",
             ),
 
