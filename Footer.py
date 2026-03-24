@@ -56,7 +56,7 @@ def UbicacionFooter() -> rx.Component:
             rx.flex(
                 rx.text("© 2025 Bar Restaurante ", size="3", color="#d8d2c8"),
                 rx.hstack(
-                    rx.link("jaitarbloo@yahoo.es", href="#", color="#d8d2c8", size="3"),
+                    rx.link("jaitardev@gmail.com", href="#", color="#d8d2c8", size="3"),
                     #rx.link("Privacidad", href="#", color="#d8d2c8", size="3"),
                     spacing="5",
                 ),
