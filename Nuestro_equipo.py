@@ -57,5 +57,4 @@ def EquipoHumano() -> rx.Component:
         background_color="#d38832"
     )
 
-app = rx.App()
-app.add_page(EquipoHumano)
+

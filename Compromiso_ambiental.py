@@ -102,8 +102,7 @@ def Compromiso_naturaleza_icono() -> rx.Component:
 
     )
 
-app = rx.App()
-app.add_page(Compromiso_naturaleza_icono)
+
 
 
 

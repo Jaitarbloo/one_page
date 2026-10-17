@@ -94,5 +94,4 @@ def Cabezera() -> rx.Component:
     )
 
 
-app = rx.App()
-app.add_page(Cabezera)
+

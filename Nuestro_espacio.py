@@ -78,5 +78,4 @@ def El_Local() -> rx.Component:
     )
 
 
-app = rx.App()
-app.add_page(El_Local)
+

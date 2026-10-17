@@ -67,5 +67,4 @@ def cuatro_fotos_con_boton() -> rx.Component:
         background_color="#d38832",
     )
 
-app = rx.App()
-app.add_page(cuatro_fotos_con_boton, route="/")
+

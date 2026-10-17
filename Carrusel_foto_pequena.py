@@ -46,5 +46,4 @@ def Carrusel_peque() -> rx.Component:
         },
     )
 
-app = rx.App()
-app.add_page(Carrusel_peque)
+
